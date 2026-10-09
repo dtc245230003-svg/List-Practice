@@ -4,56 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành Nhúng CSS vào HTML</title>
-
-    <!-- Phần 3: Nhúng External CSS từ file bên ngoài -->
+    <title>Trang web của tôi</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Phần 2: Nhúng Internal CSS trong thẻ <style> -->
-    <style>
-        .internal-title {
-            color: #28a745;
-            /* Màu xanh lá */
-        }
-
-        .internal-text {
-            color: #6f42c1;
-            /* Màu tím */
-        }
-    </style>
 </head>
 
 <body>
 
-    <h1>THỰC HÀNH CÁC CÁCH NHÚNG CSS</h1>
+    <!-- Sử dụng ID Selector -->
+    <h1 id="main-title">Trang web của tôi</h1>
 
-    <!-- PHẦN 1: INLINE CSS -->
-    <section>
-        <h2 style="color: #dc3545;">1. Tiêu đề sử dụng Inline CSS</h2>
-        <p style="color: #0d6efd;">
-            Đoạn văn này được định màu chữ dương trực tiếp bằng thuộc tính style (Inline CSS).
-        </p>
-    </section>
+    <!-- Sử dụng Class Selector -->
+    <p class="description">
+        Xin chào! Tôi là học viên tại CodeGym. Tôi yêu thích lập trình web, thiết kế giao diện và luôn tìm tòi những
+        công nghệ mới.
+    </p>
 
-    <hr>
+    <h2>Sở thích của tôi</h2>
 
-    <!-- PHẦN 2: INTERNAL CSS -->
-    <section>
-        <h2 class="internal-title">2. Tiêu đề sử dụng Internal CSS</h2>
-        <p class="internal-text">
-            Đoạn văn này được định màu tím bằng thẻ &lt;style&gt; đặt ở thẻ &lt;head&gt; (Internal CSS).
-        </p>
-    </section>
+    <!-- Danh sách sở thích sử dụng Class và Pseudo-class :nth-child -->
+    <ul class="hobby-list">
+        <li class="hobby-item">Đọc sách công nghệ</li>
+        <li class="hobby-item">Chơi cầu lông</li>
+        <li class="hobby-item">Viết code HTML/CSS</li>
+    </ul>
 
-    <hr>
-
-    <!-- PHẦN 3: EXTERNAL CSS -->
-    <section>
-        <h2 class="external-title">3. Tiêu đề sử dụng External CSS</h2>
-        <p class="external-text">
-            Đoạn văn này được định màu cam thông qua file style.css riêng biệt (External CSS).
-        </p>
-    </section>
+    <!-- Nút bấm sử dụng Pseudo-class :hover -->
+    <div class="action-box">
+        <button class="custom-btn">Nhấn vào đây</button>
+    </div>
 
 </body>
 

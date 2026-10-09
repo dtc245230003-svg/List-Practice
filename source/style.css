@@ -1,16 +1,81 @@
-/* Định dạng chung cho trang */
+/* 1. Element Selector: Đổi màu nền trang và phông chữ chung */
 body {
   font-family: Arial, sans-serif;
-  padding: 25px;
+  background-color: #f0f4f8;
+  color: #333333;
+  padding: 30px;
+  margin: 0;
+}
+
+/* 2. ID Selector: Căn giữa tiêu đề <h1> */
+#main-title {
+  text-align: center;
+  color: #1d3557;
+  font-size: 32px;
+}
+
+/* 3. Class Selector: Định dạng đoạn văn mô tả */
+.description {
+  font-size: 16px;
+  text-align: center;
+  color: #4a5568;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
   line-height: 1.6;
-  background-color: #f8f9fa;
 }
 
-/* PHẦN 3: EXTERNAL CSS RULES */
-.external-title {
-  color: #fd7e14; /* Màu cam */
+/* 4. Grouping Selector (Gộp bộ chọn): Căn giữa tiêu đề phụ và hộp nút bấm */
+h2,
+.action-box {
+  text-align: center;
 }
 
-.external-text {
-  color: #20c997; /* Màu xanh ngọc */
+/* 5. Class & Pseudo-class Selector (:nth-child): Định dạng danh sách với các màu khác nhau */
+.hobby-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.hobby-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Pseudo-classes :nth-child để tạo màu sắc riêng cho từng item */
+.hobby-item:nth-child(1) {
+  background-color: #e63946; /* Màu đỏ */
+}
+
+.hobby-item:nth-child(2) {
+  background-color: #457b9d; /* Màu xanh dương */
+}
+
+.hobby-item:nth-child(3) {
+  background-color: #2a9d8f; /* Màu xanh ngọc */
+}
+
+/* 6. Class & Pseudo-class Selector (:hover): Định dạng nút bấm và hiệu ứng hover */
+.custom-btn {
+  background-color: #1d3557;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng :hover khi rê chuột vào nút bấm */
+.custom-btn:hover {
+  background-color: #e63946;
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
