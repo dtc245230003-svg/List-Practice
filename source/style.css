@@ -1,81 +1,52 @@
-/* 1. Element Selector: Đổi màu nền trang và phông chữ chung */
+/* 1. Thiết lập phông chữ và màu nền (background-color) cho toàn bộ trang web */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #e9ecef; /* Màu nền xám xạnh nhẹ cho trang */
   color: #333333;
-  padding: 30px;
+  text-align: center;
+  padding: 40px 20px;
   margin: 0;
 }
 
-/* 2. ID Selector: Căn giữa tiêu đề <h1> */
-#main-title {
-  text-align: center;
+h1 {
   color: #1d3557;
-  font-size: 32px;
-}
-
-/* 3. Class Selector: Định dạng đoạn văn mô tả */
-.description {
-  font-size: 16px;
-  text-align: center;
-  color: #4a5568;
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  line-height: 1.6;
-}
-
-/* 4. Grouping Selector (Gộp bộ chọn): Căn giữa tiêu đề phụ và hộp nút bấm */
-h2,
-.action-box {
-  text-align: center;
-}
-
-/* 5. Class & Pseudo-class Selector (:nth-child): Định dạng danh sách với các màu khác nhau */
-.hobby-list {
-  list-style: none;
-  padding: 0;
-  max-width: 400px;
-  margin: 0 auto 30px auto;
-}
-
-.hobby-item {
-  padding: 12px;
   margin-bottom: 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
 }
 
-/* Pseudo-classes :nth-child để tạo màu sắc riêng cho từng item */
-.hobby-item:nth-child(1) {
-  background-color: #e63946; /* Màu đỏ */
-}
-
-.hobby-item:nth-child(2) {
-  background-color: #457b9d; /* Màu xanh dương */
-}
-
-.hobby-item:nth-child(3) {
-  background-color: #2a9d8f; /* Màu xanh ngọc */
-}
-
-/* 6. Class & Pseudo-class Selector (:hover): Định dạng nút bấm và hiệu ứng hover */
-.custom-btn {
-  background-color: #1d3557;
-  color: #ffffff;
-  padding: 12px 28px;
+p {
   font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: #495057;
 }
 
-/* Hiệu ứng :hover khi rê chuột vào nút bấm */
-.custom-btn:hover {
-  background-color: #e63946;
-  transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+/* 2. Thiết lập ảnh nền (background-image) và căn giữa nội dung cho khối div quan trọng */
+.important-box {
+  /* Căn giữa khối div trên trang & quy định kích thước */
+  max-width: 650px;
+  margin: 35px auto;
+  padding: 60px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  /* Thêm ảnh nền bằng background-image */
+  background-image: url("https://picsum.photos/800/400"); /* Đường dẫn ảnh mẫu trực tuyến (hoặc dùng đường dẫn ảnh local của bạn) */
+  background-size: cover; /* Ảnh phủ kín toàn bộ khối div */
+  background-position: center; /* Căn giữa hình ảnh nền */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+
+  /* Căn giữa chữ & định dạng màu chữ trong khối div */
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Đổ bóng nhẹ cho chữ trong khối div để tương phản tốt trên ảnh nền */
+.important-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.important-box p {
+  color: #f8f9fa;
+  font-size: 18px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
