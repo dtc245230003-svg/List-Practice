@@ -4,49 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch họp công ty</title>
+    <title>Thực hành Danh sách trong CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Lịch họp công ty</h1>
+    <h1>THỰC HÀNH CÁC THUỘC TÍNH DANH SÁCH TRONG CSS</h1>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Ngày</th>
-                <th>Giờ</th>
-                <th>Nội dung cuộc họp</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <!-- Gộp 2 hàng của cột Ngày cho Thứ Hai -->
-                <td rowspan="2">Thứ Hai</td>
-                <td>08:30 - 10:00</td>
-                <td>Họp giao ban đầu tuần</td>
-            </tr>
-            <tr>
-                <td>10:30 - 12:00</td>
-                <td>Họp phòng Kinh doanh</td>
-            </tr>
-            <tr>
-                <!-- Gộp 2 hàng của cột Ngày cho Thứ Ba -->
-                <td rowspan="2">Thứ Ba</td>
-                <td>09:00 - 11:00</td>
-                <td>Họp triển khai dự án mới</td>
-            </tr>
-            <tr>
-                <td>14:00 - 16:00</td>
-                <td>Đào tạo nhân viên mới</td>
-            </tr>
-            <tr>
-                <td>Thứ Tư</td>
-                <!-- Sử dụng colspan gộp 2 cột Giờ và Nội dung khi họp kéo dài cả ngày -->
-                <td colspan="2">Hội thảo Chiến lược & Tổng kết Quý (Cả ngày: 08:00 - 17:00)</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Mục 2: Thay đổi kiểu đánh dấu square -->
+    <h2>1. Danh sách kiểu ô vuông (Square)</h2>
+    <ul class="list-square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+    </ul>
+
+    <!-- Mục 3: Đánh số La Mã upper-roman -->
+    <h2>2. Các bước học với số La Mã (Upper Roman)</h2>
+    <ol class="list-roman">
+        <li>Học HTML</li>
+        <li>Học CSS</li>
+        <li>Học JavaScript</li>
+        <li>Học Git</li>
+    </ol>
+
+    <!-- Mục 4: Sử dụng hình ảnh làm dấu đánh dấu -->
+    <h2>3. Công cụ học tập (Sử dụng hình ảnh làm Marker)</h2>
+    <ul class="list-image">
+        <li>Visual Studio Code</li>
+        <li>Google Chrome</li>
+        <li>GitHub</li>
+        <li>Git</li>
+    </ul>
+
+    <!-- Mục 5: Thay đổi vị trí (Outside vs Inside) -->
+    <h2>4. So sánh vị trí Dấu đánh dấu (Position)</h2>
+    <h3>Vị trí: Outside (Bên ngoài - Mặc định)</h3>
+    <ul class="pos-outside">
+        <li>Mục thứ nhất với vị trí dấu nằm ngoài khối nội dung.</li>
+        <li>Mục thứ hai với vị trí dấu nằm ngoài khối nội dung.</li>
+    </ul>
+
+    <h3>Vị trí: Inside (Bên trong)</h3>
+    <ul class="pos-inside">
+        <li>Mục thứ nhất với vị trí dấu thụt vào bên trong khối nội dung.</li>
+        <li>Mục thứ hai với vị trí dấu thụt vào bên trong khối nội dung.</li>
+    </ul>
+
+    <!-- Mục 6: Sử dụng thuộc tính rút gọn list-style -->
+    <h2>5. Thuộc tính rút gọn list-style</h2>
+    <ul class="list-shorthand">
+        <li>Nội dung 1 áp dụng thuộc tính rút gọn</li>
+        <li>Nội dung 2 áp dụng thuộc tính rút gọn</li>
+    </ul>
+
+    <!-- Mục 7: Tạo kiểu danh sách với màu sắc và khoảng cách -->
+    <h2>6. Danh sách Ngôn ngữ Lập trình (Có màu sắc & khoảng cách)</h2>
+    <ul class="list-styled-color">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+    </ul>
+
+    <!-- Mục 8: Bài tập tổng hợp - Lộ trình học Web -->
+    <h2>7. Lộ trình học lập trình Web (Bài tập tổng hợp)</h2>
+    <ol class="roadmap-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>GitHub</li>
+    </ol>
 
 </body>
 

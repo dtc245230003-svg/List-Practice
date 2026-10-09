@@ -1,0 +1,76 @@
+/* Thẻ chung */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #333;
+}
+
+/* Mục 2: Kiểu đánh dấu ô vuông */
+.list-square {
+  list-style-type: square;
+}
+
+/* Mục 3: Đánh số La Mã viết hoa */
+.list-roman {
+  list-style-type: upper-roman;
+}
+
+/* Mục 4: Hình ảnh làm dấu đánh dấu (Sử dụng URL ảnh icon mẫu) */
+.list-image {
+  list-style-image: url("https://img.icons8.com/color/16/000000/checkmark.png");
+}
+
+/* Mục 5: So sánh Outside và Inside */
+.pos-outside {
+  list-style-position: outside;
+  background-color: #e9ecef;
+  padding: 10px 40px;
+}
+
+.pos-inside {
+  list-style-position: inside;
+  background-color: #e9ecef;
+  padding: 10px 40px;
+}
+
+/* Mục 6: Thuộc tính rút gọn list-style */
+.list-shorthand {
+  /* Cú pháp: list-style: [type] [position] [image]; */
+  list-style: square inside;
+}
+
+/* Mục 7: Danh sách có màu sắc và khoảng cách */
+.list-styled-color {
+  background-color: #d1ecf1;
+  padding: 20px 40px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.list-styled-color li {
+  color: #0c5460;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Mục 8: Bài tập tổng hợp - Lộ trình học Web */
+.roadmap-list {
+  /* Cú pháp rút gọn: type position */
+  list-style: decimal inside;
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.roadmap-list li {
+  background-color: #ffffff;
+  color: #155724;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 4px;
+  font-weight: bold;
+}
