@@ -1,48 +1,68 @@
-/* Định dạng phông chữ và lề cho toàn trang */
+/* Định dạng chung */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng tiêu đề header */
+header {
+  background-color: #4caf50;
+  color: white;
   padding: 20px;
-  background-color: #f8f9fa;
+  font-size: 24px;
 }
 
-/* 1. Chiều rộng bảng 100% & Bỏ đường viền kép (border-collapse) */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Định dạng các phần section */
+section {
+  padding: 20px;
 }
 
-/* 2. Tạo đường viền cho các ô trong bảng */
-table,
-th,
-td {
-  border: 1px solid #cccccc;
+/* Định dạng ảnh đại diện */
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #4caf50;
+  margin: 20px;
+  object-fit: cover;
 }
 
-/* 3. Padding tạo khoảng cách thoáng giữa nội dung và đường viền */
-th,
-td {
-  padding: 12px 15px;
-}
-
-/* 4. Định kiểu cho hàng tiêu đề <th>: Chiều cao, Căn trái, Nền tối, Chữ trắng */
-th {
-  height: 50px;
+/* Định dạng danh sách sở thích */
+ul {
+  list-style-type: square;
   text-align: left;
-  background-color: #333333;
-  color: #ffffff;
-  font-size: 16px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* 5. Định kiểu cho ô dữ liệu <td>: Chiều cao, Căn giữa theo chiều dọc, Nền xám nhạt */
+/* Định dạng bảng liên hệ */
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 50%;
+  background-color: white;
+}
+
+th,
 td {
-  height: 60px;
-  vertical-align: middle;
-  background-color: #ffffff;
-  color: #333333;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
 }
 
-/* Hiệu ứng khi đổi màu hàng khi di chuột qua */
-tbody tr:hover td {
-  background-color: #f1f1f1;
+th {
+  background-color: #4caf50;
+  color: white;
+  width: 30%;
+}
+
+/* Định dạng footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ddd;
 }
